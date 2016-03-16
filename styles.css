@@ -1,0 +1,542 @@
+body {
+    background-color: #484848;
+    font-family: 'arial';
+    font-size: 16px;
+}
+
+
+ 
+   
+
+
+/*--------------------*\
+      slide-cover
+\*--------------------*/
+
+.cover__photos-slider {
+    max-width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+@media screen and (max-width: 450px) {
+    .cover__photos-slider {
+        max-width: 100%;
+        height: 150px;
+        position: relative;
+    }
+}
+
+.slide1-photo,
+.slide2-photo,
+.slide3-photo,
+.slide4-photo,
+.slide5-photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1-photo {
+    background: url(cover-photo-s.jpg)no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade 8s infinite;
+}
+
+.slide2-photo {
+    background: url(cover-photo-2.jpg)no-repeat center;
+    background-size: cover;
+    animation: fade2 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+}
+
+.slide3-photo {
+    background: url(cover-photo-a.jpg)no-repeat center;
+    background-size: cover;
+    animation: fade3 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1
+    }
+    33.333% {
+        opacity: 0
+    }
+    66.666% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0
+    }
+    33.333% {
+        opacity: 1
+    }
+    66.666% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0
+    }
+    33.333% {
+        opacity: 0
+    }
+    66.666% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+
+
+
+
+
+/*---------------------------------------------*\
+    Forum Navigation-bar (Logo, Search'from,
+     New topic-Btn (module), 
+     Profile-picture (dropdown))
+\*---------------------------------------------*/
+
+.navbar-default {
+    border-radius: 0px;
+}
+
+
+/*
+ *  Logo e navigationbar-ti 'Forum'
+ */
+
+.logo-navbar {
+    padding-left: 18px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+}
+.logo-forum {
+    height: 60px;
+}
+
+
+
+/*
+ * search form, ku perfshihet edhe 'search-icon' 
+ */
+
+.search-form {
+    background-color: #f8f8f8;
+    border: none;
+    box-shadow: none;
+    border-bottom: solid 2px #484848;
+    border-radius: 0px;   
+}
+
+.search-form:hover {    
+    border-bottom: solid 2px red;
+    transition: all 0.8s ease;
+}
+
+.search-form:focus {   
+    background-color: #E8E8E8; 
+    box-shadow: none;
+    outline: none;
+    border-bottom: solid 2px #337ab7;
+    border-radius: 0px;
+}
+
+.search-icon {
+    position: relative;
+    color: #555;
+    display: block;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    .search-icon {
+        position: relative;
+        color: #555;
+        display: block;
+        padding-left: 0px;
+    }
+}
+
+.search-icon.addon-md .glyphicon,
+.search-icon .glyphicon,
+.search-icon.addon-md .fa,
+.search-icon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.search-icon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+    width: 450px;
+}
+
+@media screen and (max-width: 450px) {
+    .search-icon.addon-lg .form-control {
+        height: 40px;
+        font-size: 18px;
+        width: 220px;
+    }
+}
+
+.search-icon.addon-lg .fa,
+.search-icon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 25px;
+    top: 2px;
+}
+
+@media screen and (max-width: 450px) {
+    .search-icon.addon-lg .fa,
+    .search-icon.addon-lg .glyphicon {
+        font-size: 18px;
+        margin-left: 0;
+        left: 15px;
+        top: 2px;
+    }
+}
+
+
+/*
+ * Butoni shto ku ne te cilin ne mund te shtojme Topic's
+ */
+
+.navnar__new-topic-btn {
+    width: 300px;
+    height: 40px;
+    background-color: #43707B;
+    color: white;
+    border: solid 2px #43707B;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: 0px;
+}
+
+.navnar__new-topic-btn:hover {    
+    background-color: #f8f8f8;
+    color: #43707B;
+    border-color: #43707B;
+    transition: all ease-in-out 0.4s;
+}
+
+.navnar__new-topic-btn:focus {
+    background-color: #4f7080;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+@media screen and (max-width: 450px) {
+    .navnar__new-topic-btn {
+        width: 220px;
+        background-color: #43707B;
+        color: white;
+        font-weight: bold;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
+
+
+/*
+ * Inside The new topic 'Module
+ */
+
+.modal__header-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal__body-input {
+    width: 100%;
+    border: solid 1px #43707B;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.modal__body-textarea {
+    resize: vertical;
+    width: 100%;
+    border: solid 1px #43707B;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.modal__footer-button {
+    background-color: white;
+    border: solid 1px black;
+}
+
+.modal__footer-button:hover {
+    background-color: white;
+    border: solid 1px #333366;
+    color: #43707B;
+}
+
+
+/*
+ *   Navigation-bar UserPhoto/logout/signup
+ */
+
+.navbar__photo-logout {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.navbar__photo-logout1>li>a {
+    padding-top: 7px;
+    padding-bottom: 1px;
+}
+
+
+
+
+/*-----------------------------------------*\
+     Forum-Panel (Header, Body, 
+     Notification'btn, Footer (Reply'btn))
+\*-----------------------------------------*/
+
+
+/* 
+ *  header- panel 
+ */
+
+.panel-heading {
+    min-height: 70px;
+    border-bottom: none;
+}
+
+.panel__header-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.panel__header-profile-link {
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #43707B;
+}
+
+.panel__header-profile-link:hover {
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #43707B;
+}
+
+
+/* 
+ *    Panel-Body
+ */
+
+.panel__body-time {
+    color: #A0A0A0;
+}
+
+.panel__body-title {
+    font-weight: bold;
+}
+
+ 
+/*
+ *    Noification button insde Panel-Body
+ */
+
+ .notification_text-icon:hover {
+    text-decoration: none;
+ }
+
+ .notification_text-icon:focus {
+    text-decoration: none;
+ }
+
+ .notification_text-icon:active {
+    text-decoration: none;
+    outline: none;
+ }
+
+.notification__btn {
+    color: #4f7080; 
+}
+
+.notification__btn:hover {
+    text-decoration: none;
+}
+
+.notification__btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.post__number {
+    text-align: center;
+    border-bottom: dashed 1px black; 
+    padding-bottom: 5px;
+    border-left: none;
+}
+
+
+/*
+ *   Modal inside notification-btn insde Panel-Body.
+ */
+
+.notification-modal__reply-comment {
+    height: 500px;
+    overflow: auto;
+}
+
+.notification-modal__user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 1px;
+}
+
+.notification-modal__username {
+    font-weight: bold;
+    text-decoration: none;
+    color: #43707B;
+}
+
+.notification-modal__body-text{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.notification-modal__panel-comment {
+    border-radius: 0px;
+    border-bottom: solid 2px #43707B;
+    padding-left: 10px;
+}
+
+.notification-modal__post-time {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 1px;
+}
+
+
+/*
+ *  Panel footer
+ */
+
+
+/*
+ *  Reply-btn and dropdown-textarea 
+ *  inside Panel-Footer
+ */
+
+.panel__footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+@media screen and (max-width: 450px) {
+ .panel__footer  {
+    margin-top: 30px;
+    text-align: center;
+    }
+}
+
+.panel__footer-reply-btn {
+    background-color: #4f7080;
+    border: none;
+    width: 100px;
+    border:solid 1px #4f7080;
+    border-radius: 4px;    
+}
+
+.panel__footer-reply-btn:hover {
+    background-color: white;
+    color: #43707B;
+    transition: all 0.4s ease;
+    font-weight: bold;
+    border: solid 1px white;   
+}
+
+.panel__footer-reply-btn:focus {
+    outline: none;   
+    background-color: white; 
+    color: #43707B;
+    font-weight: bold;
+    border: solid 1px white; 
+}
+
+.panel__footer-reply-dropdown {
+    background-color: white;
+    margin-top: 10px;
+}
+
+.panel__footer-insert-comment {
+    resize: vertical;
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: solid 1px #4f7080;
+    background-color: #f5f5f5
+}
+
+.panel__footer-insert-comment:focus{
+    background-color: white;
+}
+
+
+
+
+
+/*-----------------------------*\
+    Page footer,
+    (Rights, Socialnetwork)
+\*-----------------------------*/
+
+.footer-copyright {
+    margin-top: 8px;
+    color: white;
+    padding-left: 0px;
+}
+/*
+ *   Social-NetWork's
+ */
+
+.footer-social-network {
+    text-align: right;
+}
+
+#social_network:hover {
+    color: white;
+    transition: all 0.7s ease;
+}

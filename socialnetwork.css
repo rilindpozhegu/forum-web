@@ -1,0 +1,16 @@
+/*
+ *   Social-NetWork's
+ */
+
+.footer-social-network {
+    text-align: right;
+}
+
+#social_network:hover {
+    color: white;
+    transition: all 0.7s ease;
+}
+
+
+
+

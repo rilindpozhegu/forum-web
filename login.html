@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header-Navigation-bar -->
+    <nav class="navbar container-fluid">
+        <div class="container  nav-logo">
+            <a href="index.html"><img src="logo-forum.png" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- User photo-login -->
+    <div class="text-center">
+        <div class="logo"><img src="login.jpg" class="login__photo"></div>
+
+        <!-- Main Form -->
+        <div class="login-form-1">
+            <form id="login-form" class="text-left">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login__form-group">
+                        <div class="login__form-row">
+                            <p class="login__username-password">Username</p>
+                            <input type="text" class="login__input-form" placeholder="username">
+                        </div>
+                        <div class="login__form-row">
+                            <p class="login__username-password">Password</p>
+                            <input type="password" class="login__input-form" placeholder="password">
+                        </div>
+                        <div class="login__form-row  login__form-checkbox">
+                            <input type="checkbox">
+                            <label>remember</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button"><i class="fa  fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- form footer -->
+                <div class="login__form-footer">
+                    <p>forgot your password? <a href="#" class="click__here">click here</a>
+                    </p>
+                    <p>new user? <a href="signup.html" class="create__new-account">create new account</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Social Network -->
+    <div class="container social-network-footer">
+        <div class="text-center">
+            <a href="#"><i id="social_network" class="fa fa-facebook-square  fa-2x social"></i></a>
+            <a href="#"><i id="social_network" class="fa fa-twitter-square  fa-2x social"></i></a>
+            <a href="#"><i id="social_network" class="fa fa-google-plus-square  fa-2x social"></i></a>
+            <a href="#"><i id="social_network" class="fa fa-envelope-square  fa-2x social"></i></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap script's & Jquery-->
+        <script src="library.js"></script>
+
+</body>
+</html>

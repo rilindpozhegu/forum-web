@@ -1,0 +1,184 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+/*--------------------------*\
+    Profile Navigation bar
+\*--------------------------*/
+
+.profile__navbar {
+    background-color: #484848;
+    height: 70px;
+}
+
+.profile__navbar-logo img {
+    width: 100px;
+    height: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/*----------------------------*\
+		Profile picture
+\*----------------------------*/
+
+.profile__picture-col {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile__picture {
+	height: 250px;
+}
+
+
+/*
+ *	Upload-button
+ */		
+
+.upload__picture-btn {
+	margin-top: 10px;
+	border-bottom: solid 2px #4f7080;
+	border-top: solid 2px #f5f5f5;
+	border-right: solid 2px #f5f5f5;
+	border-left: solid 2px #f5f5f5;
+	width: 100px;
+	height: 30px;
+	background-color: #f5f5f5;
+	font-weight: bold;
+}
+
+.upload__picture-btn:hover {
+	color: #4f7080;
+	border:solid 2px #4f7080;
+}
+
+.upload__picture-btn:focus {
+	outline: none;
+}
+
+
+
+
+
+/*-----------------------*\
+	  Biography-panel
+\*-----------------------*/
+
+.profile__biography-panel {
+	background-color: #D7EEF6;
+	padding: 20px 20px;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .profile__biography-panel {
+    	margin-top: 20px;
+    	text-align: center;
+	}
+}
+
+
+
+
+
+
+/*---------------------------*\
+	Update personal details 
+		   "forms" 
+\*---------------------------*/
+
+.profile__update-details {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .profile__update-details{
+		margin-top: 70px;
+		text-align: center;
+	}
+}
+
+.profile__update-details .form-control{
+	width: 90%;
+}
+
+@media screen and (max-width: 450px) {
+    .profile__update-details .form-control{
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
+/*---------------------------*\
+	  Update old password
+\*---------------------------*/
+
+.profile__update-password {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .profile__update-password {
+		margin-top: 70px;
+		text-align: center;
+	}
+}
+
+.profile__update-password .form-control {
+	width: 90%;
+}
+
+@media screen and (max-width: 450px) {
+    .profile__update-password .form-control {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
+/*----------------------*\
+	  Social Network
+\*----------------------*/
+
+.social-network {
+	text-align: right;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .social-network {
+		text-align: center;
+		margin-top: 30px;
+	}
+}
+
+.footer-social-network {
+    text-align: right;
+}
+
+#social_network:hover {
+    color: #484848;
+    transition: all 0.7s ease;
+}
