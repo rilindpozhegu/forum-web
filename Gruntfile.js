@@ -21,8 +21,8 @@
        // Task-specific options go here. 
      },
      all: {
-       src: ["index.css", "socialnetwork.css"],
-       dest: "styles.css"
+       src: ["assets/styles/index.css", "assets/styles/socialnetwork.css"],
+       dest: "assets/styles/styles.css"
      },
    },
 
@@ -41,9 +41,8 @@
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.loadNpmTasks('grunt-include-bootstrap');
 
    // Default task(s). 
-  grunt.registerTask('default', ['concat_css']);
-  grunt.registerTask('default', ['uglify']);
+
+  grunt.registerTask('default', ['uglify','concat_css']);
  };

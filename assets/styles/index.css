@@ -7,7 +7,7 @@ body {
 
  
    
-
+ 
 
 /*--------------------*\
       slide-cover
@@ -38,21 +38,21 @@ body {
 }
 
 .slide1-photo {
-    background: url(cover-photo-s.jpg)no-repeat center;
+    background: url(../photos/cover-photo-s.jpg)no-repeat center;
     background-size: cover;
     animation: fade 8s infinite;
     -webkit-animation: fade 8s infinite;
 }
 
 .slide2-photo {
-    background: url(cover-photo-2.jpg)no-repeat center;
+    background: url(../photos/cover-photo-2.jpg)no-repeat center;
     background-size: cover;
     animation: fade2 8s infinite;
     -webkit-animation: fade2 8s infinite;
 }
 
 .slide3-photo {
-    background: url(cover-photo-a.jpg)no-repeat center;
+    background: url(../photos/cover-photo-a.jpg)no-repeat center;
     background-size: cover;
     animation: fade3 8s infinite;
     -webkit-animation: fade3 8s infinite;
@@ -147,7 +147,7 @@ body {
 }
 
 .search-form:hover {    
-    border-bottom: solid 2px red;
+    border-bottom: solid 2px #337ab7;
     transition: all 0.8s ease;
 }
 
