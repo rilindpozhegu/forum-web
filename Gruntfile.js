@@ -41,8 +41,8 @@
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-
    // Default task(s). 
 
   grunt.registerTask('default', ['uglify','concat_css']);
+  
  };
