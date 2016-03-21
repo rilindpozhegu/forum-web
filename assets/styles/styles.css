@@ -138,14 +138,32 @@ body {
  * search form, ku perfshihet edhe 'search-icon' 
  */
 
+.navbar-form {
+    text-align: center;
+}
+
 .search-form {
     background-color: #f8f8f8;
     border: none;
     box-shadow: none;
     border-bottom: solid 2px #484848;
     border-radius: 0px;   
+    width: 400px; 
+    height: 35px;
 }
 
+@media screen and (max-width: 450px) {
+    .search-form {
+        background-color: #f8f8f8;
+    border: none;
+    box-shadow: none;
+    border-bottom: solid 2px #484848;
+    border-radius: 0px;   
+    width: 300px; 
+    height: 35px;
+    margin-bottom: 15px;
+    }
+}
 .search-form:hover {    
     border-bottom: solid 2px #337ab7;
     transition: all 0.8s ease;
@@ -157,71 +175,6 @@ body {
     outline: none;
     border-bottom: solid 2px #337ab7;
     border-radius: 0px;
-}
-
-.search-icon {
-    position: relative;
-    color: #555;
-    display: block;
-    padding-left: 15px;
-}
-
-@media screen and (max-width: 450px) {
-    .search-icon {
-        position: relative;
-        color: #555;
-        display: block;
-        padding-left: 0px;
-    }
-}
-
-.search-icon.addon-md .glyphicon,
-.search-icon .glyphicon,
-.search-icon.addon-md .fa,
-.search-icon .fa {
-    position: absolute;
-    z-index: 2;
-    left: 10px;
-    font-size: 14px;
-    width: 20px;
-    margin-left: -2.5px;
-    text-align: center;
-    padding: 10px 0;
-    top: 1px
-}
-
-.search-icon.addon-lg .form-control {
-    line-height: 1.33;
-    height: 40px;
-    font-size: 18px;
-    padding: 10px 16px 10px 40px;
-    width: 450px;
-}
-
-@media screen and (max-width: 450px) {
-    .search-icon.addon-lg .form-control {
-        height: 40px;
-        font-size: 18px;
-        width: 220px;
-    }
-}
-
-.search-icon.addon-lg .fa,
-.search-icon.addon-lg .glyphicon {
-    font-size: 18px;
-    margin-left: 0;
-    left: 25px;
-    top: 2px;
-}
-
-@media screen and (max-width: 450px) {
-    .search-icon.addon-lg .fa,
-    .search-icon.addon-lg .glyphicon {
-        font-size: 18px;
-        margin-left: 0;
-        left: 15px;
-        top: 2px;
-    }
 }
 
 
